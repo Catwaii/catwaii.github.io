@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Mint Sans";
+  src: url("/fonts/MintSansRegular.otf");
+}
+
+@font-face {
+    font-family: "Next Art";
+    src: url("/fonts/NEXT ART_Regular.otf");
+  }
+
+  @font-face {
+    font-family: "Wood Dragon";
+    src: url("/fonts/Wood Dragon.otf");
+  }
