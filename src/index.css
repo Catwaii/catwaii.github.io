@@ -8,11 +8,37 @@
 }
 
 @font-face {
-    font-family: "Next Art";
-    src: url("/fonts/NEXT ART_Regular.otf");
-  }
+  font-family: "Next Art";
+  src: url("/fonts/NEXT ART_Regular.otf");
+}
 
-  @font-face {
-    font-family: "Wood Dragon";
-    src: url("/fonts/Wood Dragon.otf");
-  }
+@font-face {
+  font-family: "Wood Dragon";
+  src: url("/fonts/Wood Dragon.otf");
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1E1E1E;
+  border-radius: 0.1rem;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #1E1E1EB1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #006401;
+  border-radius: 0.1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #109850;
+}
