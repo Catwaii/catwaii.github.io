@@ -8,8 +8,16 @@ export default {
     "./public/**/*.{tsx,ts,jsx,js}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      mint_sans: ["Mint Sans", "sans-serif"],
+      next_art: ["Next Art", "sans-serif"],
+      wood_dragon: ["Wood Dragon", "script"]
+    },
+    extend: {
+      backgroundImage: {
+        "img-landing": "url('/images/backgrounds/landscape.gif')",
+      },
+    },
   },
   plugins: [],
-}
-
+};
