@@ -42,3 +42,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #109850;
 }
+
+*{
+ user-select: none; 
+
+}

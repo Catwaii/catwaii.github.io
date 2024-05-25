@@ -1,12 +1,9 @@
 export const Sticker: React.FC = () => (
-    <div className="fixed overflow-hidden">
-      < div className="mt-8">
+    <div className="fixed overflow-hidden z-10">
+      < div className="mt-8 z-10">
 
-        <img src="public\images\Sticker\Sticker.png"></img>
+        <img className="h-28" src="public\images\Sticker\Sticker.png" ></img>
   
-  
-    
- </div> 
-</div>
-
-  )
+      </div> 
+   </div>
+)
