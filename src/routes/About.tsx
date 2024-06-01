@@ -1,4 +1,6 @@
-import {} from "react-router-dom";
+import { } from 'react-router-dom';
+
+
 
 export default function About() {
   return (
@@ -17,7 +19,7 @@ export default function About() {
     </svg>
     </div>
 
-      <h1>ABOUT US</h1>
+      <h1 className='text-2xl'>ABOUT US</h1>
 
     <div className="flex-1 w-5/6 mx-auto p-4 text-sm h-full shadow-lg text-left indent-7">
 
@@ -55,7 +57,7 @@ export default function About() {
       <p className="font-next_art">
            SIN EMBARGO, ASCENT SOFTWARE ES MÁS QUE SOLO UN ESTUDIO DE DESARROLLO DE
         VIDEOJUEGOS. SOMOS UNA COMUNIDAD DE CREATIVOS APASIONADOS, UNIDOS POR
-        NUESTRA AMOR A LOS VIDEOJUEGOS Y NUESTRA DETERMINACIÓN PARA EMPUJAR LOS
+        NUESTRO AMOR A LOS VIDEOJUEGOS Y NUESTRA DETERMINACIÓN PARA EMPUJAR LOS
         LÍMITES DE LO QUE ES POSIBLE. NOS ESFORZAMOS POR CONSTRUIR UNA CULTURA
         QUE FOMENTE LA CREATIVIDAD, LA INNOVACIÓN Y LA COLABORACIÓN, Y CREEMOS
         EN LA IMPORTANCIA DE PROPORCIONAR UN AMBIENTE DE TRABAJO POSITIVO Y
@@ -73,23 +75,30 @@ export default function About() {
       </p>
       </div>
       <br></br>
-      <h3 className="text-sm">&copy; ASCENT STUDIOS 2024</h3>
+      <h3 className="text-lg">&copy; ASCENT STUDIOS 2024</h3>
 
       <br />
       <div className="mx-auto">
-      <svg width="30" height="130" viewBox="0 0 30 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="12" height="130" viewBox="0 0 30 149" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.5 3C17.5 1.61929 16.3807 0.5 15 0.5C13.6193 0.5 12.5 1.61929 12.5 3L17.5 3ZM15 148.434L29.4338 134L15 119.566L0.566249 134L15 148.434ZM12.5 3L12.5 134L17.5 134L17.5 3L12.5 3Z" fill="white"/>
       </svg>
       </div>
 
-  <button className="ml-auto px-10 py-10">
-    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="30" fill="#006401"/>
-    <path d="M20.4933 35.2556C20.1644 34.9268 20 34.5082 20 34C20 33.4918 20.1644 33.0732 20.4933 32.7444L28.7444 24.4933C28.9238 24.3139 29.1181 24.1865 29.3274 24.1112C29.5366 24.0371 29.7608 24 30 24C30.2392 24 30.4711 24.0448 30.696 24.1345C30.9196 24.2242 31.1061 24.3438 31.2556 24.4933L39.5067 32.7444C39.8356 33.0732 40 33.4918 40 34C40 34.5082 39.8356 34.9268 39.5067 35.2556C39.1779 35.5845 38.7593 35.7489 38.2511 35.7489C37.7429 35.7489 37.3244 35.5845 36.9955 35.2556L30 28.2601L23.0045 35.2556C22.6756 35.5845 22.2571 35.7489 21.7489 35.7489C21.2407 35.7489 20.8221 35.5845 20.4933 35.2556Z" fill="#F3F3F3"/>
-    </svg>
- </button>
-
-
+        <button  onClick={() => {
+                if (visualViewport !== null && document !== null) {
+                  const landingSection = document.getElementById("landing");
+                  if(landingSection !== null)
+                    {
+                      landingSection.scrollIntoView({behavior: 'smooth'})
+                    }
+                }
+              }}
+           className="fixed overflow-hidden bottom-5 z-10 right-5 hover:animate-pulse">
+          <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" rx="30" fill="#006401" />
+               <path d="M20.4933 35.2556C20.1644 34.9268 20 34.5082 20 34C20 33.4918 20.1644 33.0732 20.4933 32.7444L28.7444 24.4933C28.9238 24.3139 29.1181 24.1865 29.3274 24.1112C29.5366 24.0371 29.7608 24 30 24C30.2392 24 30.4711 24.0448 30.696 24.1345C30.9196 24.2242 31.1061 24.3438 31.2556 24.4933L39.5067 32.7444C39.8356 33.0732 40 33.4918 40 34C40 34.5082 39.8356 34.9268 39.5067 35.2556C39.1779 35.5845 38.7593 35.7489 38.2511 35.7489C37.7429 35.7489 37.3244 35.5845 36.9955 35.2556L30 28.2601L23.0045 35.2556C22.6756 35.5845 22.2571 35.7489 21.7489 35.7489C21.2407 35.7489 20.8221 35.5845 20.4933 35.2556Z" fill="#F3F3F3" />
+           </svg>
+         </button>
     </div>
     </section>
   );

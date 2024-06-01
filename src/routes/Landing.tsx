@@ -3,7 +3,7 @@
 export default function Landing() {
   const date = new Date();
   return (
-    <section className="home">
+    <section className="home" id="landing">
       <div className="flex flex-col min-h-screen bg-no-repeat bg-img-landing bg-cover bg-center container min-w-full">
         <div className="flex flex-col bg-black/10 m-0 p-0 min-h-screen">
           <div className="flex flex-col content-center mt-20 p-0">
