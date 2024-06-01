@@ -2,6 +2,7 @@ import {} from "react-router-dom";
 
 export default function About() {
   return (
+    <section id="about">
       <div className="flex flex-col bg-black to-pink-500 text-white text-center text-xl">
 
     <div className="objetc-cover mx-auto">
@@ -90,6 +91,7 @@ export default function About() {
 
 
     </div>
+    </section>
   );
 
 }
