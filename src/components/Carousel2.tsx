@@ -33,7 +33,7 @@ function Card({ index, link, imageUrl, title, date, description }: CardProps) {
       </a>
       <a
         href={link}
-        className="absolute top-0 left-0 z-10 block w-full h-full transition-opacity duration-300 opacity-0 aspect-square hover:opacity-100 bg-ascent-green/50"
+        className="absolute top-0 left-0 block w-full h-full transition-opacity duration-300 opacity-0 aspect-square hover:opacity-100 bg-ascent-green/50"
       ></a>
       <div className="flex flex-col mt-2">
         <span className="text-sm text-center text-white font-next_art">
@@ -285,7 +285,7 @@ function CardContainer() {
     {/* <div> */}
       <div
         onClick={scrollPrev}
-        className="absolute left-0 z-1 flex items-center w-9 h-full transition-all duration-300 ease-in-out opacity-75 basis-0 hover:bg-gradient-to-r hover:from-ascent-green hover:from-50% hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed hover:cursor-pointer fill-white/50 hover:fill-white"
+        className="absolute left-0 z-10 flex items-center w-9 h-full transition-all duration-300 ease-in-out opacity-75 basis-0 hover:bg-gradient-to-r hover:from-ascent-green hover:from-50% hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed hover:cursor-pointer fill-white/50 hover:fill-white"
       >
         <ScrollArrowSvg className="absolute left-0 z-10 w-5 rotate-90" />
         <span className="sr-only">Previous</span>
