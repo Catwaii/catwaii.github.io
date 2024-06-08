@@ -6,7 +6,7 @@ export default function Devlogs() {
   return (
     <section className="devlogs">
       <div className="flex flex-col min-h-screen container min-w-full bg-[#0F0F0F]">
-        <div className="flex flex-col items-end justify-end mr-8 mt-8 text-2xl">
+        <div className="flex flex-col items-end justify-end mr-8 mt-8 text-2xl 2xl:text-4xl">
           <span className="font-next_art text-white mr-11">
             ASCENT&#40;&#41;&#123;
           </span>

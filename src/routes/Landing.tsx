@@ -32,7 +32,7 @@ export default function Landing() {
                 }
               }}
               // className="bg-[#282827] text-white hover:bg-ascent-green font-bold py-2 px-11 mt-8 rounded-lg items-center border-b-8 hover:border-[#053d05] border-[#161616]"
-              className="bg-[#282827] text-white hover:bg-ascent-green font-bold py-2 px-11 mt-8 rounded-lg items-center shadow-[0px_6px_0px_0px_#161616] hover:shadow-[0px_6px_0px_0px_#053d05] active:shadow-[0px_0px_20px_#198d19] active:bg-[#053605] active:border- active:translate-y-2"
+              className="bg-[#282827] 2xl:text-4xl 2xl:w-96 2xl:h-24 text-white hover:bg-ascent-green font-bold py-2 px-11 mt-8 rounded-lg items-center shadow-[0px_6px_0px_0px_#161616] hover:shadow-[0px_6px_0px_0px_#053d05] active:shadow-[0px_0px_20px_#198d19] active:bg-[#053605] active:border- active:translate-y-2"
             >
               About Us
             </button>
