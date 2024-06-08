@@ -3,6 +3,7 @@ import Carousel from "../components/Carousel2";
 import ScrollLineSvg from "../assets/icons/scroll_line.svg?react";
 
 export default function Devlogs() {
+  const date = new Date();
   return (
     <section className="devlogs">
       <div className="flex flex-col min-h-screen container min-w-full bg-[#0F0F0F]">
@@ -19,7 +20,7 @@ export default function Devlogs() {
           </div>
         </div>
         <div className="flex flex-col items-end justify-end text-xs mt-2">
-          <span className="text-white text-[.5rem] font-thin mr-4 text-bold font-next_art">&copy;ASCENT STUDIOS 2024</span>
+          <span className="text-white text-[.5rem] font-thin mr-4 text-bold font-next_art">&copy;ASCENT STUDIOS {date.getFullYear()}</span>
         </div>
         <div className="flex-1 flex-grow"> </div>
         <div className="flex flex-col items-center justify-center my-2">
